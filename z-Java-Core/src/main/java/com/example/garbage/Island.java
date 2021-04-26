@@ -6,17 +6,17 @@ public class Island {
 	Island i;
 	
 	public static void main(String[] args) {
-		Integer i =  128; // range is -128 to +127 so now NOT be using the wrapper pool
-		Integer ii = 128; // i and ii point to the same object in Integer wrapper pool
-	
-		String s1 = "hi";
-		//s1 = null; // is "hi" eligible for garbage collection?
-		String s2 = new String("hi");
-		
-		if(i == ii) {
-			System.out.println("same");
-			
-		}
+//		Integer i =  127; // range is -128 to +127 so now NOT be using the wrapper pool
+//		Integer ii = 127; // i and ii point to the same object in Integer wrapper pool
+//	
+//		String s1 = "hi";
+//		//s1 = null; // is "hi" eligible for garbage collection?
+//		String s2 = new String("hi");
+//		
+//		if(i == ii) {
+//			System.out.println("same");
+//			
+//		}
 		//String s2 = "hi";
 		
 		Island i2 = new Island();

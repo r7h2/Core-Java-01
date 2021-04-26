@@ -6,6 +6,21 @@ public class HelloWorld {
 	
 	public static void main(String[] args) {
 		
+		
+		// person walks out door
+		// person gets in car
+		// person starts car
+		// person drives to store
+		// person gets bread
+		// person drives home
+		// person puts bread in drawer
+		
+
+		
+		
+		
+		
+		
 		boolean result; // local variable
 		//System.out.println(result);
 		
