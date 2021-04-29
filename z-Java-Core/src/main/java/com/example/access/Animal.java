@@ -1,6 +1,6 @@
 package com.example.access;
 
-public abstract class Animal extends Object { // abstract = "incomplete"
+public class Animal extends Object { // abstract = "incomplete"
 	
 	// Animal IS-A Animal
 	// Animal IS-A Object
@@ -11,7 +11,9 @@ public abstract class Animal extends Object { // abstract = "incomplete"
 	
 	public static final double SHOE_SIZE = 10; // global constant
 	
-	public abstract void makeNoise();
+	public  void makeNoise() {		
+		System.out.println("generic noise");
+	}
 	
 	public static void doThis() {
 		System.out.println("do in Animal");

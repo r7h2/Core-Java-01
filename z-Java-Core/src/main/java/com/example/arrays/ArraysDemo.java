@@ -11,6 +11,7 @@ public class ArraysDemo {
 		
 		int[] a1 = new int[] {1,2,3};
 		for (int element: a1) {System.out.println("i = " + element);}
+		System.out.println("======");
 		
 		int [][] x = new int[3][]; // initialize number of rows
 		x[0] = new int[3];
