@@ -1,5 +1,10 @@
 package com.example;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
 public class HelloWorld {
 
 	String name; // instance variable
@@ -87,7 +92,17 @@ public class HelloWorld {
 		}
 		
 		
+		List<String> list01 = new ArrayList<>();
+		list01.add("fred");
+		list01.add("apple");
+		list01.add("zebra");
+		list01.add("bingo");
 		
+		Comparator<String> reverseSort = Collections.reverseOrder();
+		Collections.sort(list01);
+		System.out.println(list01);
+		Collections.sort(list01, reverseSort);
+		System.out.println(list01);
 		
 		
 		
