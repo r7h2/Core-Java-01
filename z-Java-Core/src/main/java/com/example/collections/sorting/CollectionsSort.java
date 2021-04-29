@@ -3,6 +3,7 @@ package com.example.collections.sorting;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class CollectionsSort {
@@ -40,7 +41,7 @@ public class CollectionsSort {
 		
 		
 		
-		System.out.println("------");
+		System.out.println("-----------------------");
 		
 		List<Person> p1 = new ArrayList<>();
 		Person person1 = new Person("Rick", 88);
@@ -56,12 +57,23 @@ public class CollectionsSort {
 		Collections.sort(p1);
 		System.out.println("sorted by age:" + p1);
 		
-		
-		
-		
 		Collections.sort(p1, new PersonByAgeComparator());
 		System.out.println("sorted using Comparator:" + p1);
 		
+		System.out.println(" ------------- ");
+		
+		// show Collections.reverseOrder()
+		List<String> list01 = new ArrayList<>();
+		list01.add("fred");
+		list01.add("apple");
+		list01.add("zebra");
+		list01.add("bingo");
+		
+		Comparator<String> reverseSort = Collections.reverseOrder();
+		Collections.sort(list01);
+		System.out.println(list01);
+		Collections.sort(list01, reverseSort);
+		System.out.println(list01);
 		
 		
 		
